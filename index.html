@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Hitesh Sir Attendence</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div>
+    <div class="card head">
+      <img src="./image/background.jpg" alt="Guru" class="sir-img" />
+      <img src="./icon.png" alt="Guru" class="sir-img" />
+      <h1>Hanji, kaise hain aap aur kya kiya aaj?</h1>
+    </div>
+
+    <div class="todaySection">
+      <div id="todayDiv" class="log-head">
+        <h2 id="todayLogsHead">Today's Logs</h2>
+        <button id="showLogs" class="button">Show All</button>
+      </div>
+      <div class="card" id="todayLogs">
+        <div>
+          <ol>
+            <li>
+              <label class="toLog">time of entry</label>
+              <label class="entry" name="" id="">Completed Writing Blogs on Google AI ADK and doocumented
+                Piyush Garg's series too</label>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="allSection hidden">
+      <div id="allDiv" class="log-head">
+        <h2 id="allLogsHead">All Logs</h2>
+        <button id="showToday" class="button">Show Today</button>
+      </div>
+      <div class="card" id="allLogs">
+        <div>
+          <ol id="allLogList">
+            <li>
+              <h2>Today's Logs</h2>
+              <ol>
+                <li>
+                  <label class="toLog">time of entry</label>
+                  <label class="entry" name="" id="">Completed Writing Blogs on Google AI ADK and doocumented
+                    Piyush Garg's series too</label>
+                </li>
+              </ol>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottombar">
+    <textarea id="newLog" class="toLog" placeholder="ache hai sir, aaj ye kaam kiya..."></textarea>
+    <button id="addLog" class="button">+Log</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>
