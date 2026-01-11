@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Hitesh Sir Attendence",
+  "name": "Chai Aur Attendence",
   "version": "1.0",
   "permissions": ["storage", "sidePanel"],
   "icons": {
