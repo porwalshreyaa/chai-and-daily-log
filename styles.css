@@ -51,6 +51,11 @@ ol {
   flex-direction: column;
   gap: 15px;
 }
+
+/* Remove numbers/bullets from day headers in the all logs list -  only this line has been added by AI */
+#allLogList > li {
+  list-style: none;
+}
 li div {
   display: grid;
   grid-template-columns: 1fr 2fr 40px;

@@ -138,7 +138,10 @@ document.addEventListener("DOMContentLoaded", () => {
     if (e.key === "Enter" && !e.shiftKey) {
       e.preventDefault(); // Prevent default newline behavior
       const newLog = (logInput.value || "").trim();
-      if (newLog) logEntry(newLog);
+      if (newLog) {
+        logEntry(newLog);
+        logInput.value = ""; // Clear input after logging
+      }
     }
   });
 
@@ -148,7 +151,10 @@ document.addEventListener("DOMContentLoaded", () => {
    */
   addLog.addEventListener("click", () => {
     const newLog = (logInput.value || "").trim();
-    if (newLog) logEntry(newLog);
+    if (newLog) {
+      logEntry(newLog);
+      logInput.value = ""; // Clear input after logging
+    }
   });
 
   // ============================================================================
